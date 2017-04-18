@@ -1,0 +1,11 @@
+{
+  "name": "help-gatsby",
+  "version": "0.0.1",
+  "description": "Knotel help pages built with Gatsby",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eluck (mail@eluck.me)",
+  "license": "ISC"
+}
