@@ -8,6 +8,7 @@ import { colors, activeColors } from 'utils/colors'
 import typography from 'utils/typography'
 import { config } from 'config'
 import Logo       from 'components/logo.js'
+import RoundLogo       from 'components/round-logo.js'
 
 // Import styles.
 import 'css/main.css'
@@ -26,7 +27,7 @@ module.exports = React.createClass({
     const examplesActive = includes(this.props.location.pathname, '/examples/')
 
     return (
-      <div>
+      <div style={{ position: 'relative', minHeight: '800px', paddingBottom: '132px' }}>
         <div
           style={{
             background: colors.bg,
@@ -118,6 +119,17 @@ module.exports = React.createClass({
         >
           {this.props.children}
         </Container>
+
+
+
+        <RoundLogo rootStyle={{
+          width: '120px',
+          height: '120px',
+          position: 'absolute',
+          margin: 'auto',
+          bottom: '12px',
+          left: '0px',
+          right: '0px' }} />
       </div>
     )
   },
