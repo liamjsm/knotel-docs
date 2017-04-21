@@ -17,9 +17,9 @@ module.exports = React.createClass({
     const title = DocumentTitle.rewind()
 
     let css
-    if (process.env.NODE_ENV === 'production') {
+
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
-    }
+    
 
     return (
       <html lang="en">

@@ -1,5 +1,5 @@
 ---
-title: "AlphabetJS: The latest and greatest Javascript framework"
+title: "Main knotel docs"
 ---
 
 ## Inops magnis Acrisius remisit Circes

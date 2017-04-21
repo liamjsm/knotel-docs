@@ -1,5 +1,5 @@
-siteTitle="AlphabetJS"
-baseColor = "#884499"
+siteTitle="Knotel Docs"
+baseColor = "#5a92bf"
 linkPrefix = "/gatsby-starter-documentation"
 docPages = [
   "/docs/",
