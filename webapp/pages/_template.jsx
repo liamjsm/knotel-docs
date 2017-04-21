@@ -70,9 +70,10 @@ module.exports = React.createClass({
                     textDecoration: 'none',
                     marginLeft: rhythm(1/2),
                   }}
-                  href="https://github.com/gatsbyjs/gatsby"
+                  target='_blank'
+                  href="https://knotel.com"
                 >
-                  Github
+                  Knotel
                 </a>
                 <Link
                   to={prefixLink('/examples/')}
