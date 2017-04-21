@@ -54,7 +54,7 @@ module.exports = React.createClass({
                     fontSize: adjustFontSizeTo('25.5px').fontSize,
                   }}
                 >
-                  <Logo width='120' height='32' />
+                  <Logo width='120' height='24' />
                 </Link>
               </Span>
 

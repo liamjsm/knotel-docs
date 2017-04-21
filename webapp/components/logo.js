@@ -3,7 +3,7 @@ import React from 'react';
 export default function(props) {
   return (
     <svg width={props.width || '370px'} height={props.height || '64px'} viewBox="0 0 370 64" version="1.1" >
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Desktop-HD-Copy" transform="translate(-535.000000, -812.000000)" fill="#FEFEFE">
       <g id="Group-2" transform="translate(535.000000, 812.000000)">
       <polygon id="Fill-5" points="325.050041 2.82393839 343.570892 2.82393839 343.574137 60.7366451 325.050041 60.7366451"></polygon>
