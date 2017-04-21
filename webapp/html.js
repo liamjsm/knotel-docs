@@ -17,8 +17,9 @@ module.exports = React.createClass({
     const title = DocumentTitle.rewind()
 
     let css
-
+    if (process.env.NODE_ENV === 'production') {
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
+    }
 
 
     return (
@@ -38,7 +39,7 @@ module.exports = React.createClass({
             dangerouslySetInnerHTML={{
               __html:
                 `
-                
+
                   .ball-0 {
                     background-image: url(${prefixLink('/docs/some-react-code/0.jpg')});
                   }
