@@ -7,6 +7,7 @@ import { colors, activeColors } from 'utils/colors'
 
 import typography from 'utils/typography'
 import { config } from 'config'
+import Logo       from 'components/logo.js'
 
 // Import styles.
 import 'css/main.css'
@@ -45,23 +46,18 @@ module.exports = React.createClass({
                 padding: `${rhythm(3/4)} 0`,
               }}
             >
-              <Span
-                columns={4}
-                style={{
-                  height: 24, // Ugly hack. How better to constrain height of div?
-                }}
-              >
-                <Link
-                  to={prefixLink('/')}
+              <Span columns={4} style={{height: 24}}>
+                <Link to={prefixLink('/')}
                   style={{
                     textDecoration: 'none',
                     color: colors.fg,
                     fontSize: adjustFontSizeTo('25.5px').fontSize,
                   }}
                 >
-                  {config.siteTitle}
+                  <Logo width='120' height='32' />
                 </Link>
               </Span>
+
               <Span columns={8} last>
                 <a
                   style={{
@@ -73,7 +69,7 @@ module.exports = React.createClass({
                   target='_blank'
                   href="https://knotel.com"
                 >
-                  Knotel
+                  Knotel App
                 </a>
                 <Link
                   to={prefixLink('/examples/')}
