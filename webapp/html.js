@@ -19,7 +19,7 @@ module.exports = React.createClass({
     let css
 
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
-    
+
 
     return (
       <html lang="en">
@@ -38,9 +38,7 @@ module.exports = React.createClass({
             dangerouslySetInnerHTML={{
               __html:
                 `
-                  a {
-                    color: ${colors.bg};
-                  }
+                
                   .ball-0 {
                     background-image: url(${prefixLink('/docs/some-react-code/0.jpg')});
                   }
