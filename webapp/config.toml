@@ -1,6 +1,7 @@
-siteTitle="Knotel Docs"
+siteTitle="Knotel"
 baseColor = "#5a92bf"
-linkPrefix = "/gatsby-starter-documentation"
+linkPrefix = "/knotel-docs"
+
 docPages = [
   "/docs/",
   "/docs/getting-started/",

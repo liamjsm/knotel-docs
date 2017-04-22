@@ -1,0 +1,18 @@
+general:
+  branches:
+    only:
+      - master
+
+machine:
+  node:
+    version: 7.0.0
+
+test:
+  override:
+    - "true"
+
+deployment:
+  pages:
+    branch: master
+    commands:
+      - ./scripts/deploy-ghpages.sh
