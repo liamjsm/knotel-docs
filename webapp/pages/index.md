@@ -1,5 +1,6 @@
 ---
-title: "Introducing Knotel Docs"
+title: Introducing Knotel Docs
+published: true
 ---
 <br/>
 
@@ -15,4 +16,4 @@ The server serves the following
 - [Knotel Discourse (community)](https://github.com/Knotable/knotel-discourse)
 - Knotel Bot (tba)
 
-All Knotel technology is served from our Amazon Web Services account, apart from email, which is sent via mailgun.
+All Knotel technology is served from our Amazon Web Services account, apart from email, which is sent via Postmark.
