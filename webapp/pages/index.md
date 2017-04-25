@@ -17,3 +17,5 @@ The server serves the following
 - Knotel Bot (tba)
 
 All Knotel technology is served from our Amazon Web Services account, apart from email, which is sent via Postmark.
+
+More coming..
