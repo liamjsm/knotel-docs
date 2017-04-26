@@ -3,9 +3,9 @@ title: Booking rooms via Google Calendar
 published: true
 ---
 
-This is a guide explaining how to set up and use rooms booking via Google Calendar. The feature allows you book conference rooms by just "inviting" them to events from your calendar just like usual attendees. 
+This is a guide explaining how to set up and use rooms booking via Google Calendar. The feature allows you book conference rooms by just "inviting" them to events from your calendar just like usual attendees.
 
-The guide assumes that you'll use an account  belonging to a Google Apps for Work domain. To set up the feature, head your knotel profile page https://knotel.com/profile and click "Book Rooms via Google Calendar" link. 
+The guide assumes that you'll use an account  belonging to a Google Apps for Work domain. To set up the feature, head your knotel profile page https://knotel.com/profile and click "Book Rooms via Google Calendar" link.
 
 <img src="./google-cal-sync-help-1.png" height="640" />
 
@@ -29,4 +29,5 @@ If your booking conflicts with an existing booking, the room will decline your i
 <img src="./google-cal-sync-help-5.png" height="640" />
 
 You can update bookings details by changing events' properties: start date, length, attendees set, title, etc. Please note that deletion of an event won't effect in the corresponding booking cancellation.
+
 If you have any questions, ping GM of your property for help.
