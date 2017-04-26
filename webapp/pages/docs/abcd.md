@@ -1,5 +1,6 @@
 ---
 title: a new post
+author: eluck
 ---
 
 ## A New Post
