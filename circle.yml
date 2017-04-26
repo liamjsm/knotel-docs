@@ -10,6 +10,9 @@ machine:
 dependencies:
   cache_directories:
     - "webapp/node_modules"
+    - "webapp/yarn_cache"
+  override:
+    - cd webapp && yarn install --prefer-offline --cache-folder yarn_cache
 
 test:
   override:
