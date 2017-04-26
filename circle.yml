@@ -7,6 +7,10 @@ machine:
   node:
     version: 7.0.0
 
+dependencies:
+  cache_directories:
+    - "webapp/node_modules"
+
 test:
   override:
     - "true"
