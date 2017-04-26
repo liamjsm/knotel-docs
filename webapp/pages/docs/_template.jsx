@@ -15,7 +15,7 @@ const { rhythm } = typography
 
 function sortByFilename(posts) {
   // index.md should be the first post
-  return sortBy(posts, post => post.file.name == 'index' ? '00' : post.file.name);
+  return sortBy(posts, post => post.path);
 }
 
 module.exports = React.createClass({
@@ -33,7 +33,7 @@ module.exports = React.createClass({
 
   componentDidMount(){
     const { route, location } = this.props
-    // when browse to /docs/, redirect to the first article of /docs
+    // when browse to /docs/, redirect to the first article of /docs/
     const pages = sortByFilename(filter(route.pages, page => page.path.startsWith(route.path)));
     if (route.path === location.pathname){
       this.context.router.push(pages[0].path);
@@ -43,7 +43,6 @@ module.exports = React.createClass({
   render () {
     const { route } = this.props
     const pages = sortByFilename(filter(route.pages, page => page.path.startsWith(route.path)));
-
     const childPages = pages.map((page) => {
       return {
         title: page.data.title,
