@@ -1,12 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router'
 import Breakpoint from 'components/Breakpoint'
+
 import find from 'lodash/find'
+import filter from 'lodash/filter'
+import includes from 'lodash/includes'
+import sortBy from 'lodash/sortBy';
+
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 
 import typography from 'utils/typography'
 const { rhythm } = typography
+
+function sortByFilename(posts) {
+  // index.md should be the first post
+  return sortBy(posts, post => post.file.name == 'index' ? '00' : post.file.name);
+}
 
 module.exports = React.createClass({
   propTypes () {
@@ -22,8 +32,11 @@ module.exports = React.createClass({
   },
 
   render () {
-    const childPages = config.docPages.map((p) => {
-      const page = find(this.props.route.pages, (_p) => _p.path === p)
+    const { route } = this.props
+    const pages = sortByFilename(filter(route.pages, page => page.path.startsWith(route.path)));
+    
+    const childPages = pages.map((page) => {
+      console.log('long', page.file)
       return {
         title: page.data.title,
         path: page.path,
@@ -36,7 +49,6 @@ module.exports = React.createClass({
       >
         {child.title}
       </option>
-
     )
     const docPages = childPages.map((child) => {
       const isActive = prefixLink(child.path) === this.props.location.pathname
