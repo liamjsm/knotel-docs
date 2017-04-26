@@ -1,6 +1,6 @@
 ---
 title: Booking rooms via Google Calendar
-published: false
+published: true
 ---
 
 This is a guide explaining how to set up and use rooms booking via Google Calendar. The feature allows you book conference rooms by just "inviting" them to events from your calendar just like usual attendees.
@@ -9,7 +9,7 @@ The guide assumes that you'll use an account  belonging to a Google Apps for Wor
 
 <img src="./google-cal-sync-help-1.png" style="max-height:640px" />
 
-The popped up guide will help you subscribing to calendars of the conference rooms you’re interested in.In the popup, select a property and floors where the conference rooms located and press “Add” button.
+The popped up guide will help you subscribing to calendars of the conference rooms you’re interested in. In the popup, select a property and floors where the conference rooms located and press “Add” button.
 
 <img src="./google-cal-sync-help-2.png" style="max-height:640px" />
 
