@@ -24,7 +24,7 @@ To manually subscribe for Knotel bookings in your Google Calendar, open the 'Oth
 
 Google Calendar does not allow you to control the frequency at which iCal Feeds are refreshed. It make take up to 24 hours for bookings made in the Knotel apps to appear in your bookings calendar in Google.
 
-<img src="./google calendar.png"  alt="Google Calendar" height="640" />  
+<img src="./google-calendar.png"  alt="Google Calendar" height="640" />  
 
 _Note: Google calendar does not support changing auto-refresh(sync) frequency._
 

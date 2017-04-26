@@ -31,6 +31,15 @@ module.exports = React.createClass({
     return this.context.router.push(e.target.value)
   },
 
+  componentDidMount(){
+    const { route, location } = this.props
+    // when browse to /docs/, redirect to the first article of /docs
+    const pages = sortByFilename(filter(route.pages, page => page.path.startsWith(route.path)));
+    if (route.path === location.pathname){
+      this.context.router.push(pages[0].path);
+    }
+  },
+
   render () {
     const { route } = this.props
     const pages = sortByFilename(filter(route.pages, page => page.path.startsWith(route.path)));
