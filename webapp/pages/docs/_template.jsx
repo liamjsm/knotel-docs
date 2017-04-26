@@ -34,9 +34,8 @@ module.exports = React.createClass({
   render () {
     const { route } = this.props
     const pages = sortByFilename(filter(route.pages, page => page.path.startsWith(route.path)));
-    
+
     const childPages = pages.map((page) => {
-      console.log('long', page.file)
       return {
         title: page.data.title,
         path: page.path,
