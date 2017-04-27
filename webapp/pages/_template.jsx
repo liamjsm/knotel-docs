@@ -24,7 +24,6 @@ module.exports = React.createClass({
   },
   render () {
     const docsActive = includes(this.props.location.pathname, '/docs/')
-    const examplesActive = includes(this.props.location.pathname, '/examples/')
 
     return (
       <div style={{ position: 'relative', minHeight: '800px', paddingBottom: '132px' }}>
@@ -72,23 +71,6 @@ module.exports = React.createClass({
                 >
                   Knotel App
                 </a>
-                <Link
-                  to={prefixLink('/examples/')}
-                  style={{
-                    background: examplesActive ? activeColors.bg : colors.bg,
-                    color: examplesActive ? activeColors.fg : colors.fg,
-                    float: 'right',
-                    textDecoration: 'none',
-                    paddingLeft: rhythm(1/2),
-                    paddingRight: rhythm(1/2),
-                    paddingBottom: rhythm(3/4),
-                    marginBottom: rhythm(-1),
-                    paddingTop: rhythm(1),
-                    marginTop: rhythm(-1),
-                  }}
-                >
-                  Examples
-                </Link>
                 <Link
                   to={prefixLink('/docs/')}
                   style={{
