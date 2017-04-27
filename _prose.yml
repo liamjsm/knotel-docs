@@ -1,0 +1,9 @@
+prose:
+  ignore:
+    - scripts
+    - \..*
+    - "*.yml"
+    - "*.js"
+    - "*.jsx"
+    - "*.toml"
+    - "*.json"
