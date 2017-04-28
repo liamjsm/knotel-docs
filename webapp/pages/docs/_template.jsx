@@ -33,16 +33,23 @@ module.exports = React.createClass({
 
   componentDidMount(){
     const { route, location } = this.props
-    // when browse to /docs/, redirect to the first article of /docs/
-    const pages = sortByFilename(filter(route.pages, page => page.path.startsWith(route.path)));
+    // when browse to /docs/, if index.md is not exist or not published
+    // redirect to the first(sorted by filename) article of /docs/
+    const pages = this.getPublishedPages(route.pages, route.path)
     if (route.path === location.pathname){
       this.context.router.push(pages[0].path);
     }
   },
 
+  getPublishedPages(pages, path){
+    return sortByFilename(filter(pages, page => {
+      return page.path.startsWith(path) && (page.data.published !== false)
+    }));
+  },
+
   render () {
     const { route } = this.props
-    const pages = sortByFilename(filter(route.pages, page => page.path.startsWith(route.path)));
+    const pages = this.getPublishedPages(route.pages, route.path)
     const childPages = pages.map((page) => {
       return {
         title: page.data.title,
