@@ -13,7 +13,7 @@ To subscribe for Knotel bookings in an Apple Calendar, open the Apple Calendar A
 You will be prompted to give your bookings calendar a name and to set other settings like auto-refresh(sync) frequency. The auto-refresh frequency is th
 e frequency at which your Apple Calendar will check whether you have made new bookings in your Knotel account and sync them to your bookings calendar. When you have set a name and sync frequency for your bookings calendar, click  'ok' to add the calendar.
 
-<img src="./apple-calendar.png"  alt="Apple Calendar" height="640" />  
+<img src="./apple-calendar.png"  alt="Apple Calendar" style="max-height:640px" />  
 
 _Note: 'Every 5 minutes' is a preferred auto-refresh settings to update calendar bookings frequently._
 
